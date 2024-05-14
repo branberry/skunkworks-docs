@@ -6,8 +6,8 @@ interface DocButtonProps extends ButtonProps {
     text: string
 }
 
-export const DocsButton = ({ text }: DocButtonProps) => (
-    <Button>
+export const DocsButton = ({ text, ...rest }: DocButtonProps) => (
+    <Button {...rest}>
         { text }
     </Button>
 )
