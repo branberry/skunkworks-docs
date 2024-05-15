@@ -1,17 +1,19 @@
 import SiteBanner from "@/components/banner/site-banner";
 import { DocsButton } from "@/components/buttons";
 import RootLayout from "../layout";
-
+import { Body, H3 } from "@/components/typography";
 
 export default function ListOfComponents() {
   return (
-    
-      <RootLayout>
-        <main className="flex min-h-screen flex-col items-center justify-between p-24">
-          <SiteBanner />
-          <DocsButton text="Hello" />
-        </main>
-      </RootLayout>
-
+    <RootLayout>
+      <main className="grid grid-cols grid-rows-12 gap-4">
+        <H3 className="text-white">MongoDB Site Banner</H3>
+        <SiteBanner />
+        <div className="w-50">
+          <H3 className="text-white">MongoDB Button</H3>
+          <DocsButton baseFontSize={16} text="Hello" />
+        </div>
+      </main>
+    </RootLayout>
   );
 }

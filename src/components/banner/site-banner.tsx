@@ -39,15 +39,11 @@ const SiteBanner = () => {
   const { bannerContent, setBannerContent } = useContext(HeaderContext);
   const { snootyEnv } = useSiteMetadata();
 
-  console.log('bannerContent', bannerContent)
-  console.log('setBannerContent', setBannerContent)
-
   useEffect(() => {
 
     const fetchBannerContent = async () => {
       try {
         const result = await fetchBanner(snootyEnv);
-        console.log('result', result)
         setBannerContent(result);
       } catch (err) {
         console.error(err);
