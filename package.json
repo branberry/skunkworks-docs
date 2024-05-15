@@ -14,13 +14,15 @@
     "@emotion/styled": "^11.11.5",
     "@leafygreen-ui/button": "^21.2.0",
     "@leafygreen-ui/leafygreen-provider": "^3.1.12",
+    "@leafygreen-ui/typography": "^19.1.1",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
     "@next/mdx": "^14.2.3",
     "@types/mdx": "^2.0.13",
     "next": "14.2.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "realm-web": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
