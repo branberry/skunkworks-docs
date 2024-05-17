@@ -17,8 +17,40 @@
 }
 
 body {
-  color: #000;
-  background: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.hidden {
+  display: inherit !important;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden !important;
+  width: 0;
+}
+
+img.hide-medium-and-up,
+img.show-medium-and-up {
+  max-width: 100%;
+}
+
+.hide-medium-and-up {
+  display: none !important;
+}
+
+.show-medium-and-up {
+  display: block !important;
+}
+
+@media (max-width: 767px) {
+  .hide-medium-and-up {
+    display: block !important;
+  }
+
+  .show-medium-and-up {
+    display: none !important;
+  }
 }
 
 @layer utilities {
@@ -26,3 +58,17 @@ body {
     text-wrap: balance;
   }
 }
+
+.main-grid {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidenav contents";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    overflow: clip;
+}
+
+
+
+

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { RootStyleRegistry } from "@/components/global/RootStyleRegistry";
+import { RootStyleRegistry } from "@/components/global/root-style-registry";
+import { GlobalLayoutStyles } from "@/components/global/global-style-layout";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -19,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
          <RootStyleRegistry>
-            {children}
+             <GlobalLayoutStyles>
+               {children}
+             </GlobalLayoutStyles>
          </RootStyleRegistry>
       </body>
     </html>
