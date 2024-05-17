@@ -1,3 +1,20 @@
+import { H1, H2 } from "@/components/typography";
+import Paragraph from "@/components/paragraph";
+import { Tab, Tabs, LeafyTabs, LeafyTab } from "@/components/tabs";
+
 export const title = 'Getting Started'
 
-# Get Started with Atlas
+<H1> Get Started with Atlas </H1>
+
+<H2> Overview </H2>
+
+<Tabs>
+    <Tab name = "atlas-cli" tabid = "atlascli">
+        You can also run atlas setup if you have an |service| account and an organization/project, but you haven't set up a cluster
+    </Tab>
+    <Tab name = "atlasui" tabid="ui">
+        To get started using the atlas-ui
+    </Tab>
+</Tabs>
+
+<Paragraph> MongoDB Atlas provides an easy way to host and manage your data in the cloud. This tutorial guides you through creating an Atlas cluster, connecting to it, and loading sample data. You can get started with Atlas through the Atlas CLI or the Atlas User Interface. Select a tab based on how you would like to get started: </Paragraph>

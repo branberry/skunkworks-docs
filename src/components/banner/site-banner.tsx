@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useEffect } from "react";
 import styled from "@emotion/styled";
-import { HeaderContext } from "../header/header-context";
 import { SNOOTY_REALM_APP_ID } from "../../build-constants";
 import { useSiteMetadata } from "../../hooks/use-site-metadata";
 import { theme } from "../../theme/docs-theme";
